@@ -1,0 +1,148 @@
+object Form_s: TForm_s
+  Left = 1131
+  Height = 485
+  Top = 339
+  Width = 448
+  Caption = 'Площадь сектора'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '2.0.8.0'
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label_duga
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 45
+    Top = 159
+    Width = 119
+    BorderSpacing.Left = 12
+    BorderSpacing.Top = 62
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label_r: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 12
+    Height = 20
+    Top = 19
+    Width = 47
+    BorderSpacing.Left = 12
+    BorderSpacing.Top = 19
+    Caption = 'Радиус'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit_r: TEdit
+    AnchorSideLeft.Control = Label_r
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 121
+    Height = 28
+    Top = 19
+    Width = 104
+    BorderSpacing.Left = 62
+    BorderSpacing.Top = 19
+    ParentFont = False
+    TabOrder = 1
+    Text = '13,7'
+  end
+  object Label_duga: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label_r
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 20
+    Top = 77
+    Width = 89
+    BorderSpacing.Left = 12
+    BorderSpacing.Top = 38
+    Caption = 'Дуга, радиан'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit_d: TEdit
+    AnchorSideLeft.Control = Label_duga
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit_r
+    AnchorSideTop.Side = asrBottom
+    Left = 123
+    Height = 28
+    Top = 72
+    Width = 98
+    BorderSpacing.Left = 22
+    BorderSpacing.Top = 25
+    ParentFont = False
+    TabOrder = 2
+    Text = '1,57'
+  end
+  object Result: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit_d
+    AnchorSideTop.Side = asrBottom
+    Left = 161
+    Height = 112
+    Top = 162
+    Width = 136
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 62
+    Lines.Strings = (
+      'Memo_result'
+    )
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Label_result: TLabel
+    AnchorSideLeft.Control = Result
+    AnchorSideLeft.Side = asrBottom
+    Left = 317
+    Height = 20
+    Top = 171
+    Width = 122
+    BorderSpacing.Left = 20
+    Caption = 'Площадь сектора'
+    ParentColor = False
+    ParentFont = False
+  end
+  object MainMenu1: TMainMenu
+    left = 26
+    top = 284
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      OnClick = MenuItem1Click
+      object MenuItem2: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Сохранить отчет'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Запустить'
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Справка'
+      OnClick = MenuItem5Click
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Выход'
+      OnClick = MenuItem6Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 120
+    top = 284
+  end
+  object SaveDialog1: TSaveDialog
+    left = 215
+    top = 284
+  end
+end
