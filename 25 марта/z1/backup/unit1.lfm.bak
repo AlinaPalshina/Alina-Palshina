@@ -1,0 +1,120 @@
+object Form1: TForm1
+  Left = 634
+  Height = 240
+  Top = 351
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.6.4.0'
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 48
+    Top = 90
+    Width = 126
+    BorderSpacing.Top = 30
+    Caption = 'Вычислить'
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 15
+    Top = 10
+    Width = 45
+    BorderSpacing.Top = 10
+    Caption = 'Чичло а'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 15
+    Top = 45
+    Width = 45
+    BorderSpacing.Top = 20
+    Caption = 'Число b'
+    ParentColor = False
+  end
+  object a_Edit1: TEdit
+    AnchorSideLeft.Control = Label2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 65
+    Height = 23
+    Top = 10
+    Width = 109
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 10
+    TabOrder = 1
+    Text = '5'
+  end
+  object b_Edit2: TEdit
+    AnchorSideLeft.Control = Label2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = a_Edit1
+    AnchorSideTop.Side = asrBottom
+    Left = 65
+    Height = 23
+    Top = 48
+    Width = 106
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 15
+    TabOrder = 2
+    Text = '7'
+  end
+  object raznosti_Memo1: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    Left = 156
+    Height = 27
+    Top = 93
+    Width = 96
+    BorderSpacing.Left = 30
+    Lines.Strings = (
+      'raznosti_Memo'
+      '1'
+    )
+    TabOrder = 3
+  end
+  object sum_Memo1: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = raznosti_Memo1
+    AnchorSideTop.Side = asrBottom
+    Left = 156
+    Height = 22
+    Top = 140
+    Width = 96
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 20
+    Lines.Strings = (
+      'sum_Memo1'
+    )
+    TabOrder = 4
+  end
+  object proizved_Memo1: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = sum_Memo1
+    AnchorSideTop.Side = asrBottom
+    Left = 156
+    Height = 27
+    Top = 182
+    Width = 91
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 20
+    Lines.Strings = (
+      'proizved_Memo'
+      '1'
+    )
+    TabOrder = 5
+  end
+end
