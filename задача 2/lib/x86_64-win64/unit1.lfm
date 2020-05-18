@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 699
+  Height = 426
+  Top = 270
+  Width = 680
+  Caption = 'Form1'
+  ClientHeight = 426
+  ClientWidth = 680
+  DesignTimePPI = 120
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 20
+    Height = 20
+    Top = 20
+    Width = 47
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 20
+    Caption = 'Радиус'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 20
+    Top = 70
+    Width = 89
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 30
+    Caption = 'Дуга, радиан'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 127
+    Height = 28
+    Top = 20
+    Width = 100
+    BorderSpacing.Left = 60
+    BorderSpacing.Top = 20
+    TabOrder = 0
+    Text = '13,7'
+  end
+  object Edit2: TEdit
+    AnchorSideLeft.Control = Label2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit1
+    AnchorSideTop.Side = asrBottom
+    Left = 127
+    Height = 28
+    Top = 68
+    Width = 100
+    BorderSpacing.Left = 18
+    BorderSpacing.Top = 20
+    TabOrder = 1
+    Text = '1,57'
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 31
+    Top = 160
+    Width = 94
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 70
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Result: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit2
+    AnchorSideTop.Side = asrBottom
+    Left = 144
+    Height = 113
+    Top = 156
+    Width = 336
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 60
+    Lines.Strings = (
+      'Result'
+    )
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrCenter
+    Left = 250
+    Height = 20
+    Top = 130
+    Width = 180
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 250
+    BorderSpacing.Top = 130
+    BorderSpacing.Right = 250
+    BorderSpacing.Bottom = 1
+    Caption = 'Площадь сектора'
+    ParentColor = False
+  end
+end
